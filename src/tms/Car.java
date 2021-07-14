@@ -14,4 +14,11 @@ public abstract class Car {
     public void sound(){
         System.out.println("Машина делает бип-бип");
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "WHEELS_COUNT=" + WHEELS_COUNT +
+                '}';
+    }
 }
