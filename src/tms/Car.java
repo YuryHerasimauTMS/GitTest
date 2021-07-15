@@ -3,6 +3,7 @@ package tms;
 public abstract class Car {
 
     private final int WHEELS_COUNT = 4;
+    private final String MODEL = "Tesla";
 
     public Car(){
     }
@@ -13,5 +14,9 @@ public abstract class Car {
 
     public void sound(){
         System.out.println("Машина делает бип-бип");
+    }
+
+    public void accelerate() {
+        System.out.println(MODEL + "accelerate");
     }
 }
